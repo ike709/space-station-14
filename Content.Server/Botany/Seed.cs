@@ -149,10 +149,9 @@ namespace Content.Server.Botany
         public void ExposeData(ObjectSerializer serializer)
         {
             serializer.DataField(this, x => x.ID, "id", string.Empty);
-            serializer.DataField(this, x => x.Name, "name", string.Empty);
-            serializer.DataField(this, x => x.SeedName, "seedName", string.Empty);
+            serializer.DataField(this, x => x.SeedName, "seedName", string.Empty); // "packet of {SeedName} {SeedNoun}"
             serializer.DataField(this, x => x.SeedNoun, "seedNoun", "seeds");
-            serializer.DataField(this, x => x.DisplayName, "displayName", string.Empty);
+            serializer.DataField(this, x => x.DisplayName, "displayName", string.Empty); //Name of the produce
             serializer.DataField(this, x => x.RoundStart, "roundStart", true);
             serializer.DataField(this, x => x.Mysterious, "mysterious", false);
             serializer.DataField(this, x => x.Immutable, "immutable", false);
