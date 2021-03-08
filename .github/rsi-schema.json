@@ -162,7 +162,7 @@
 						"type": "string"
 					},
 					"directions": {
-						"type": "integer"
+						"type": "integer",
 						"enum": [
 							1,
 							4,
